@@ -1,16 +1,16 @@
 import pygame
 import sys
-from mm1_queue import mm1_queue_metrics
-from mmc_queue import mmc_queue_metrics
-from mm1k_queue import mm1k_queue_metrics
-from mmck_queue import mmc_k_queue_metrics
-from mm1n_queue import mm1n_queue_metrics
-from mmcn_queue import mmcn_queue_metrics
-from mg1_queue import mg1_queue_metrics
-from mm1_non_preemptive_priority import mm1_priority_non_preemptive_metrics
-from mm1_preemptive_priority import mm1_priority_preemptive_metrics
-from mg1_non_preemptive_priority import mg1_non_preemptive_priority_metrics
-from mg1_preemptive_priority import mg1_preemptive_priority_metrics
+from models.mm1_queue import mm1_queue_metrics
+from models.mmc_queue import mmc_queue_metrics
+from models.mm1k_queue import mm1k_queue_metrics
+from models.mmck_queue import mmc_k_queue_metrics
+from models.mm1n_queue import mm1n_queue_metrics
+from models.mmcn_queue import mmcn_queue_metrics
+from models.mg1_queue import mg1_queue_metrics
+from models.mm1_non_preemptive_priority import mm1_priority_non_preemptive_metrics
+from models.mm1_preemptive_priority import mm1_priority_preemptive_metrics
+from models.mg1_non_preemptive_priority import mg1_non_preemptive_priority_metrics
+from models.mg1_preemptive_priority import mg1_preemptive_priority_metrics
 
 pygame.init()
 WIDTH, HEIGHT = 1000, 640

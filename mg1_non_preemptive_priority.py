@@ -63,16 +63,16 @@ def mg1_non_preemptive_priority_metrics(arrival_rates, service_times, service_va
         L = arrival_rates[i] * W
         Lq =  L - arrival_rates[i] * service_times[i]
 
-        class_name = f"Classe {original_indices[i] + 1}"  # volta ao índice original
+        class_name = f"Classe {original_indices[i] + 1}"
         results[class_name] = {
-            "Taxa de Chegada (λ)": round(arrival_rates[i], 5),
-            "Tempo Médio de Serviço (E[S])": round(service_times[i], 5),
-            "Variância do Serviço (Var[S])": round(service_variances[i], 7),
-            "Taxa de Ocupação (ρ)": round(utilizacoes[i], 5),
-            "Número Médio no Sistema (L)": round(L, 5),
-            "Número Médio na Fila (Lq)": round(Lq, 5),
-            "Tempo Médio no Sistema (W)": round(W, 5),
-            "Tempo Médio na Fila (Wq)": round(Wq, 5)
+            "Taxa de Chegada (λ)": round(arrival_rates[i], 2),
+            "Tempo Médio de Serviço (E[S])": round(service_times[i], 2),
+            "Variância do Serviço (Var[S])": round(service_variances[i], 2),
+            "Taxa de Ocupação (ρ)": round(utilizacoes[i], 2),
+            "Tempo Médio na Fila (Wq)": round(Wq, 2),
+            "Tempo Médio no Sistema (W)": round(W, 2),
+            "Número Médio no Sistema (L)": round(L, 2),
+            "Número Médio na Fila (Lq)": round(Lq, 2)
         }
 
     return results

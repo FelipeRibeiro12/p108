@@ -52,14 +52,14 @@ def mg1_preemptive_priority_metrics(arrival_rates, service_times, service_varian
         Lq = L - λi * ES_i  # ou Lq = λi * Wq
 
         results[f"Classe {i + 1}"] = {
-            "Taxa de Chegada (λ)": round(λi, 5),
-            "Tempo Médio de Serviço (E[S])": round(ES_i, 5),
-            "Variância do Serviço (Var[S])": round(service_variances[i], 7),
-            "Taxa de Ocupação (ρ)": round(utilizacoes[i], 5),
-            "Número Médio no Sistema (L)": round(L, 5),
-            "Número Médio na Fila (Lq)": round(Lq, 5),
-            "Tempo Médio no Sistema (W)": round(W, 5),
-            "Tempo Médio na Fila (Wq)": round(Wq, 5)
+            "Taxa de Chegada (λ)": round(λi, 2),
+            "Tempo Médio de Serviço (E[S])": round(ES_i, 2),
+            "Variância do Serviço (Var[S])": round(service_variances[i], 2),
+            "Taxa de Ocupação (ρ)": round(utilizacoes[i], 2),
+            "Tempo Médio na Fila (Wq)": round(Wq, 2),
+            "Tempo Médio no Sistema (W)": round(W, 2),
+            "Número Médio no Sistema (L)": round(L, 2),
+            "Número Médio na Fila (Lq)": round(Lq, 2)
         }
 
     return results

@@ -46,10 +46,10 @@ def mm1_priority_non_preemptive_metrics(arrival_rates, service_rate):
         
         results[f"Classe {i+1}"] = {
             "Taxa de Chegada (λ)": float(lambda_i),
-            "Tempo Médio na Fila (Wq)": float(Wq_i),
             "Tempo Médio no Sistema (W)": float(W_i),
-            "Número Médio na Fila (Lq)": float(Lq_i),
-            "Número Médio no Sistema (L)": float(L_i)
+            "Tempo Médio na Fila (Wq)": float(Wq_i),
+            "Número Médio no Sistema (L)": float(L_i),
+            "Número Médio na Fila (Lq)": float(Lq_i)
         }
     return results
 
